@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Data Engineer & Web Developer</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary-color: #00ADB5; /* Teal for accents (tech feel) */
+            --bg-color: #222831;      /* Dark background */
+            --text-color: #EEEEEE;    /* Light text */
+            --secondary-text: #B2B2B2;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            height: 100vh; /* Takes up the full screen height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: linear-gradient(rgba(34, 40, 49, 0.9), rgba(34, 40, 49, 0.9)), url('your-background-image.jpg'); /* Optional bg image */
+            background-size: cover;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: var(--primary-color); /* Highlight key words */
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--secondary-text);
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        /* Button Styling */
+        .btn-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s ease, background-color 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #008c93;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(0, 173, 181, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .btn-container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero" id="home">
+        <h1>Hi, I'm [Your Name]<br>
+        <span>Data Engineer</span> & Web Developer</h1>
+        
+        <p>
+            BCA Student | Transforming raw data into insights & building real-world web solutions. 
+            Currently exploring <strong>PySpark</strong>, <strong>Big Data</strong> pipelines, and documenting my journey.
+        </p>
+        
+        <div class="btn-container">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="projects" style="padding: 50px 20px; text-align: center;">
+        <h2>Selected Projects</h2>
+        <p>(Chandhu Fitness, Vihara, Data Pipelines will go here)</p>
+    </section>
+
+</body>
+</html>
